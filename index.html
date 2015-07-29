@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" /> 
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <title>Google Maps + flickr Mashup</title>
+
+    <!-- you'll need to include the following tags here
+           * google maps script tag
+           * lightbox script tag
+           * lightbox css tag
+           * your scripts tag
+    -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEL77p0Ka-pN8IJ2kqXFoTyzx7Hzn8cU4">
+    </script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+  </head>
+
+  <body onload="initialize();">
+
+    <!-- black bar atop page -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <span class="brand">
+            <span class="gb">G</span><span class="gr">o</span><span class="gy">o</span><span class="gb">g</span><span class="gg">l</span><span class="gr">e</span> Maps +
+            <span class="fb">flick</span><span class="fp">r</span> Mashup
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    <div id="sidebar-bg">
+    <div id="sidebar">
+      
+      <!-- the search form -->
+      <p class="title">Search</p>
+      <form>
+
+        <!-- the user input -->
+	<div class="control-group">
+          <label class="control-label" for="user">User (blank for any):</label>
+          <div class="controls">
+            <input type="text" style="input-large" id="user" />
+          </div>
+	</div>
+
+	<!-- the text/keyword input -->
+	<div class="control-group">
+          <label class="control-label" for="text">Text (blank for any):</label>
+          <div class="controls">
+            <input type="text" style="input-large" id="text" />
+          </div>
+	</div>
+
+	<!-- buttons to submit/reset -->
+	<div class="actions">
+          <button class="btn" id="reset">Reset</button>
+          <button class="btn" type="button" id="searchBtn">
+	    <i class="icon-search icon-white"></i>
+	    Search
+	  </button>
+	</div>
+	
+	<!-- the results area -->
+	<p class="title">Results</p>
+	<div id="results">
+	  <!-- search results go here -->
+	</div>
+
+      </form>
+      
+    </div>
+    </div>
+    <!-- actual map should be built out in here -->    
+    <div id="map">
+    </div>
+    <script src="js/birkymaps.js"> </script>
+  </body>
+</html>

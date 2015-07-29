@@ -1,0 +1,107 @@
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: Pistara;
+  font-size: 20px;
+  line-height: 110%;
+  background: none !important;
+}
+hr {
+  margin: 0 0 10px 0;
+}
+#sidebar-bg{
+  z-index:1;
+  position: absolute;
+  background: url(../img/parchment-custom-m2.png);
+  left: 0px;
+  top: 0px;
+  bottom: 0;
+  width: 270px;
+  padding: 0 0 20px 20px;
+}
+#sidebar {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  bottom: 0;
+  width: 220px;
+  padding: 0 0 20px 20px;
+}
+.content {
+  margin-left: 260px;
+  margin-right: 20px;
+}
+#map {
+  position: absolute;
+  top: 40px;
+  left: 260px;
+  right: 0;
+  bottom: 0;
+}
+/* fixes a conflict between GMaps and Twitter Bootstrap */
+#map label {
+  display: inline;
+}
+.actions {
+  text-align: right;
+  margin-bottom: 40px;
+}  
+.brand {
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Google and Flickr colors */
+.gb {
+  color: #0063dc;
+}
+.gr {
+  color: #d41800;
+}
+.gy {
+  color: #f3c518;
+}
+.gg {
+  color: #35b72f;
+}
+.fb {
+  color: #0063dc;
+}
+.fp {
+  color: #fe63bb;
+}
+
+/* css to wrap photos */
+div.photos {
+  max-width: 400px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+div.photos img {
+  width: 75px;
+  height: 75px;
+  margin: 5px;
+  border: 1px solid #666;
+}
+.title {
+    font-family: Otto;
+    font-size: 60px;
+}
+@font-face {
+    font-family: Otto;
+    src: url(../css/'Otto.ttf');
+}
+@font-face{
+    font-family: Pistara;
+    src: url(../css/'Pistara.otf');
+}
+.control-label {
+    font-family: Pistara;
+    font-size: 18px;
+}
+.btn {
+    border-radius: 0px;
+    font-family: Pistara;
+    font-size: 20px;
+}
